@@ -63,11 +63,13 @@ body {
         "wdth" 100;
 }
 
-#introduction {
+#sec1 {
     text-align: left;
+    padding: 1rem 1.25rem;
     color: white;
     max-width: 1000px;
     border: 3px solid rgb(150, 149, 149);
+    border-radius: 8px;
 }
 
 .header-image {
@@ -95,6 +97,11 @@ body {
     overflow: auto;
     max-height: 700px;
     border: 1px solid rgb(150, 150, 150);
+    border-radius: 5px;
     scrollbar-width: thin;
     padding-bottom: 10px;
+}
+
+mark {
+    background-color: aliceblue;
 }
