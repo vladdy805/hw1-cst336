@@ -11,18 +11,18 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body style="background-color: rgb(73, 73, 112);">
+<body>
     <header>
-        <h1>National Security and Computer Science<</h1>
+        <h1>National Security</h1>
     </header>
-    <hr>
     <nav>
         <a href="index.html">Home</a>
         <a href="cybersec.html">Cybersecurity</a>
         <a href="cryptography.html" class="active">Cryptography</a>
         <a href="digital_forensics.html">Digital Forensics</a>
     </nav>
-    <hr><br>
+    <br>
+    <div class="scrollable-container">
     <figure><img src="img/cryptography.jpg" alt="code" class="header-image"></figure>
     <main>
         <br>
@@ -35,16 +35,29 @@
                     algorithms to encrypt and decrypt sensitive information, ensuring that only authorized parties can access
                     it. This is crucial for protecting government communications, military operations, and critical
                     infrastructure from cyber threats.
-                    Through computer science advancements, modern cryptographic techniques such as public key encryption and
-                    digital signatures provide robust security measures that safeguard data integrity and confidentiality.
-                    As cyber threats continue to evolve, cryptography remains a vital tool in defending national security
-                    interests.
+                    <br><br>
+                    By continuing to increase the amount of IoT devices, it has become increasingly important to implement strong cryptographic 
+                    measures to secure these devices. As described in the "Colony Collapse" scenario, by forging cryptographic keys,
+                    attackers can gain unauthorized access to IoT devices, leading to widespread disruption including gas pumps that 
+                    stop working or cars that fail to start. 
+                    <br><br>
+                    There are several ways in which cryptographic methods keep protect our national security.
+                    <ul>
+                        <li><strong>Symetric encryption</strong>, specifically Advanced Encryption Standard, is used to protect classified and operational communication</li>
+                        <li><strong>Public-key cryptography</strong> enables key exchange and digital signatures for authentication of software and firmware and secure 
+                            inter-agency links</li>
+                        <li><strong>Randomness sources</strong> provide unpredictable information to random number generators to create unguessable keys, enable secure
+                        handshakes, and protect integrity checks</li>
+                    </ul>
                 </p>
+                <br><br>
+                    References: <br>
+                    <a style="color: inherit" href="https://nap.nationalacademies.org/catalog/26168/cryptography-and-the-intelligence-community-the-future-of-encryption" target="_blank">Cryptography and the Intelligence Community</a>
             </section>
         </div>
     </main>
+    </div>
     <footer>
-        <hr>
         <p>&copy; 2025 National Security. All rights reserved.</p>
     </footer>
     </body>

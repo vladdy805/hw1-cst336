@@ -1,6 +1,7 @@
 body {
-    background-color: black;
+    background-color: rgb(73, 73, 112);
     color: rgb(255, 255, 255);
+    line-height: 1.6;
 }
 
 header,
@@ -8,21 +9,39 @@ main,
 footer,
 nav {
     text-align: center;
+    min-width: 600px;
+    margin: 0 auto;
+}
+
+header {
+    font-family: 'Courier New', Courier, monospace;
+    font-optical-sizing: auto;
+    font-style: oblique;
+}
+
+nav {
+    width: 100%;
+    min-width: 600px;
 }
 
 nav a {
-    /* style for navigation links */
     padding: 15px;
     padding-bottom: 4px;
     font-size: 1.8em;
     text-decoration: none;
     color: white;
+    letter-spacing: 0.5px;
 }
 
 nav a.active {
-    /* style for navigation links on click */
     background-color: rgb(112, 112, 112);
     padding: 6px;
+}
+
+nav a:hover {
+    background-color: rgb(92, 92, 92);
+    padding: 6px;
+    transition: 0.3s;
 }
 
 main {
@@ -47,15 +66,35 @@ body {
 #introduction {
     text-align: left;
     color: white;
-    max-width: 800px;
+    max-width: 1000px;
+    border: 3px solid rgb(150, 149, 149);
 }
 
 .header-image {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    width: 100%;
+    max-width: 1000px;
+    filter: grayscale(10%) blur(1.2px);
+    border-radius: 8px;
 }
+
 .published {
     font-style: italic;
     color: rgb(161, 161, 161);
+    opacity: 0.65;
+}
+
+.header-image:hover {
+    filter: none;
+    transition: 0.5s;
+}
+
+.scrollable-container {
+    overflow: auto;
+    max-height: 700px;
+    border: 1px solid rgb(150, 150, 150);
+    scrollbar-width: thin;
+    padding-bottom: 10px;
 }
